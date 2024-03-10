@@ -1,0 +1,25 @@
+
+block content
+  h1 Inserisci dati stazione
+  if errore
+    p.errore #{errore}
+  form(action="/inserimento-dati", method="post")
+    p
+      label(for="stazione") Stazione:
+      select(id="stazione", name="stazione")
+        option(value="") -- Seleziona una stazione --
+        each stazione in stazioni
+          option(value=stazione.nome) #{stazione.nome}
+
+    p
+      label(for="temperatura-massima") Temperatura massima:
+      input(type="number", id="temperatura-massima", name="temperatura-massima", required)
+
+    p
+      label(for="temperatura-minima") Temperatura minima:
+      input(type="number", id="temperatura-minima", name="temperatura-minima", required)
+
+    button(type="submit") Invia
+
+    p
+      a(href="/") Torna alla home page
