@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title Stazioni Meteorologiche
+  body
+    h1 Stazioni Meteorologiche
+    table(border='1')
+      thead
+        tr
+          th Nome della Città
+          th Temperatura Massima
+          th Temperatura Minima
+          th Temperatura Media
+      tbody
+        each stazione in stazioni
+          //il - serve per eseguire codice javascript all'interno della riga anche se in un file pug
+          - let media = dati[stazione.nome] ? dati[stazione.nome] : null
+          tr
+            td= stazione.nome
+            //td assume il valore di stazione.MaxTemp + ' °C' se stazione.MaxTemp esiste, se no stampa N/D
+            td= stazione.MaxTemp ? stazione.MaxTemp + ' °C' : 'N/D'
+            td= stazione.MinTemp ? stazione.MinTemp + ' °C' : 'N/D'
+            td 
+              if media
+                // | serve per la scrittura di testo in piano
+                | Media Max: #{media.mediaMax} °C, Media Min: #{media.mediaMin} °C
+              else
+                | N/D

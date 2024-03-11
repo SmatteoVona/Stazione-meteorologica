@@ -1,10 +1,14 @@
-<!--extends layout-->
+doctype html
+html
+  head
+    title Servizio Meteo
+    //link(rel="stylesheet", href="stile.css")
+  body
+    block content
+      h1 Servizio Meteo
 
-block content
-    h1 Servizio Meteo
-
-    p Scegli cosa fare:
-    br
-    a(href="/inserimento-dati") Inserisci dati stazione 
-    br
-    a(href="/riepilogo-dati") Riepilogo dati stazioni
+      p Scegli cosa fare:
+      p
+        a(href="/inserimento-dati") Inserisci dati stazione
+      p
+        a(href="/riepilogo-dati") Riepilogo dati stazioni

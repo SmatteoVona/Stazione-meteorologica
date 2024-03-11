@@ -1,0 +1,52 @@
+[
+ {
+  "nome": "Roma",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Milano",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Napoli",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Torino",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Palermo",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Genova",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Bologna",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Firenze",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Bari",
+  "MaxTemp": null,
+  "MinTemp": null
+ },
+ {
+  "nome": "Catania",
+  "MaxTemp": null,
+  "MinTemp": null
+ }
+]
