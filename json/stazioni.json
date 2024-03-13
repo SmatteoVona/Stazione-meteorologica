@@ -11,8 +11,8 @@
  },
  {
   "nome": "Napoli",
-  "MaxTemp": null,
-  "MinTemp": null
+  "MaxTemp": 6,
+  "MinTemp": 2
  },
  {
   "nome": "Torino",

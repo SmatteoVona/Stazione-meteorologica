@@ -26,14 +26,23 @@ function writeStazioni(stazioniJson) {
 }
 
 function readLog() {
+    const filePath = "json/datiLog.json"; // Percorso del file
     try {
-        const logJson = fs.readFileSync("json/datiLog.json", 'utf-8');
+        const logJson = fs.readFileSync(filePath, 'utf-8');
         return JSON.parse(logJson);
     } catch (error) {
-        console.log(error);
-        return [];
+        if (error.code === 'ENOENT') { // Il file non esiste
+            console.log("Il file datiLog.json non esiste, ne verrà creato uno nuovo.");
+            const defaultContent = []; // Contenuto di default, un array vuoto in questo caso
+            writeLog(defaultContent); // Utilizza la funzione writeLog per creare il file
+            return defaultContent; // Restituisce il contenuto di default
+        } else {
+            console.error("Errore nella lettura di datiLog.json:", error);
+            return [];
+        }
     }
 }
+
 function writeLog(logJson) {
     fs.writeFileSync("json/datiLog.json", JSON.stringify(logJson, null, 1), 'utf-8');
 }

@@ -1,38 +1,8 @@
 [
  {
-  "nomeStazione": "Torino",
-  "MaxTemp": "5",
+  "nomeStazione": "Napoli",
+  "MaxTemp": "6",
   "MinTemp": "2",
-  "timestamp": "2024-03-11T19:51:32.398Z"
- },
- {
-  "nomeStazione": "Bologna",
-  "MaxTemp": "13",
-  "MinTemp": "2",
-  "timestamp": "2024-03-11T19:52:33.483Z"
- },
- {
-  "nomeStazione": "Firenze",
-  "MaxTemp": "23",
-  "MinTemp": "1",
-  "timestamp": "2024-03-11T19:52:37.481Z"
- },
- {
-  "nomeStazione": "Firenze",
-  "MaxTemp": "23",
-  "MinTemp": "3",
-  "timestamp": "2024-03-11T19:54:51.556Z"
- },
- {
-  "nomeStazione": "Torino",
-  "MaxTemp": "-6",
-  "MinTemp": "-7",
-  "timestamp": "2024-03-11T21:03:09.565Z"
- },
- {
-  "nomeStazione": "Roma",
-  "MaxTemp": "8",
-  "MinTemp": "5",
-  "timestamp": "2024-03-11T21:10:50.055Z"
+  "timestamp": "2024-03-13T20:15:43.303Z"
  }
 ]
